@@ -1,0 +1,39 @@
+
+    <div class="row p-5">
+        <div class="cont_input">
+            <input [(ngModel)]="searchText" type="text" class="input" placeholder="Buscar evaluador por identificacion">
+        </div>
+    
+    </div>
+
+    <div class="contenedor p-5">
+    <table class="table table-striped" *ngIf='solicitudes && solicitudes.length'>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Título</th>
+                <th scope="col">Área</th>
+                <th scope="col">Sub área</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Público</th>
+                <th scope="col">Formato</th>
+                <th scope="col">Número de páginas</th>
+                <th scope="col">Número de gráficos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let solicitud of solicitudes|solicitud:searchText; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ solicitud.titulo }} </td>
+                <td>{{ solicitud.area }} </td>
+                <td>{{ solicitud.subarea }} </td>
+                <td>{{ solicitud.tipo }} </td>
+                <td>{{ solicitud.publico }} </td>
+                <td>{{ solicitud.formato }} </td>
+                <td>{{ solicitud.paginas }} </td>
+                <td>{{ solicitud.graficos }} </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    </div>

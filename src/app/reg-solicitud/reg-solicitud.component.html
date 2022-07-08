@@ -1,0 +1,341 @@
+
+<!-- modal para agregar coautores-->
+<div class="modal fade border border-3" id="modal-coautores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header p-2">
+                <h5 class="modal-title text-center w-100" id="exampleModalLabel">Coautores</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" autocomplete="off" placeholder="Nombre" [(ngModel)]="coautorA.nombre"
+                            name="nombre" class="input">
+                        <input type="text" autocomplete="off" placeholder="Apellido" name="apellido"
+                            [(ngModel)]="coautorA.apellido" class="input">
+                        <input type="text" autocomplete="off" placeholder="Correo electrónico" name="correo"
+                            [(ngModel)]="coautorA.correo" class="input">
+                        
+                    </div>
+                    <div class="col-4">
+                        <input type="text" autocomplete="off" placeholder="Departamento" name="departamento"
+                            [(ngModel)]="coautorA.departamento" class="input">
+                        <input type="text" autocomplete="off" placeholder="Dirección" name="direccion"
+                            [(ngModel)]="coautorA.direccion" class="input">
+                        <input type="number" autocomplete="off" placeholder="Número de celular" name="celular"
+                            [(ngModel)]="coautorA.celular" class="input">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" autocomplete="off" placeholder="Ciudad" [(ngModel)]="coautorA.ciudad"
+                            name="ciudad" class="input">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" autocomplete="off" placeholder="Nombre" [(ngModel)]="coautorB.nombre"
+                            name="nombreB" class="input">
+                        <input type="text" autocomplete="off" placeholder="Apellido" name="apellidoB"
+                            [(ngModel)]="coautorB.apellido" class="input">
+                        <input type="text" autocomplete="off" placeholder="Correo electrónico" name="correoB"
+                            [(ngModel)]="coautorB.correo" class="input">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" autocomplete="off" placeholder="Departamento" name="departamentoB"
+                            [(ngModel)]="coautorB.departamento" class="input">
+                        <input type="text" autocomplete="off" placeholder="Dirección" name="direccionB"
+                            [(ngModel)]="coautorB.direccion" class="input">
+                        <input type="number" autocomplete="off" placeholder="Número de celular" name="celularB"
+                            [(ngModel)]="coautorB.celular" class="input">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" autocomplete="off" placeholder="Ciudad" [(ngModel)]="coautorB.ciudad"
+                            name="ciudadB" class="input">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="row d-flex justify-content-center w-100">
+                    <button type="button" class="btn btn-outline-primary col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</button>
+                        <div class="col-4"></div>
+                    <button type="button" class="btn btn-outline-danger col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal para agregar coautores-->
+
+<!-- modal para agregar colaboradores-->
+<div class="modal fade border border-3" id="modal-colaboradores" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header p-2">
+                <h5 class="modal-title text-center w-100" id="exampleModalLabel">Colaboradores</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" autocomplete="off" placeholder="Nombre" [(ngModel)]="colaboradorA.nombre"
+                            name="nombreCA" class="input">
+                        <input type="text" autocomplete="off" placeholder="Apellido" name="apellidoCA"
+                            [(ngModel)]="colaboradorA.apellido" class="input">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" autocomplete="off" placeholder="Número de celular" name="correoCA"
+                            [(ngModel)]="colaboradorA.celular" class="input">
+                        <input type="text" autocomplete="off" placeholder="Actividad desarrollada en la obra"
+                            [(ngModel)]="colaboradorA.actividad" name="actividad" class="input">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" autocomplete="off" placeholder="Nombre" [(ngModel)]="colaboradorB.nombre"
+                            name="nombreB" class="input">
+                        <input type="text" autocomplete="off" placeholder="Apellido" name="apellidoB"
+                            [(ngModel)]="colaboradorB.apellido" class="input">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" autocomplete="off" placeholder="Número de celular" name="correoB"
+                            [(ngModel)]="colaboradorB.celular" class="input">
+                        <input type="text" autocomplete="off" placeholder="Actividad desarrollada en la obra"
+                            [(ngModel)]="colaboradorB.actividad" name="actividadB" class="input">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row d-flex justify-content-center w-100">
+                    <button type="button" class="btn btn-outline-primary col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</button>
+                    <div class="col-4"></div>
+                    <button type="button" class="btn btn-outline-danger col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal para agregar colaboradores-->
+
+
+<!-- modal para agregar informacion tecnica-->
+<div class="modal fade border border-3" id="modal-infTec" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header p-2">
+                <h5 class="modal-title text-center w-100" id="exampleModalLabel">Información Técnica</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="number" autocomplete="off" placeholder="Número de páginas del contenido del documento"
+                            [(ngModel)]="solicitud.paginas" name="paginas" class="input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="number" autocomplete="off" placeholder="Número de fotos a blanco y negro"
+                            [(ngModel)]="solicitud.fotosBN" name="fotosBN" class="input"> 
+                        <input type="number" autocomplete="off" placeholder="Número de gráficos" [(ngModel)]="solicitud.graficos"
+                            name="graficos" class="input">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" autocomplete="off" placeholder="Número de fotos a color" [(ngModel)]="solicitud.fotosC"
+                            name="fotosC" class="input">
+                        <input type="number" autocomplete="off" placeholder="Número de tablas o cuadros" [(ngModel)]="solicitud.tablas"
+                            name="tablas" class="input">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row d-flex justify-content-center w-100">
+                    <button type="button" class="btn btn-outline-primary col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</button>
+                    <div class="col-4"></div>
+                    <button type="button" class="btn btn-outline-danger col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal para agregar información tecnica-->
+
+<!-- modal para agregar informacion complementaria-->
+<div class="modal fade border border-3" id="modal-infComp" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header p-2">
+                <h5 class="modal-title text-center w-100" id="exampleModalLabel">Información Complementaria</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <select class="input" aria-label="Default select example disabled" [(ngModel)]="pregunta1">
+                            <option selected disabled value="Ediciones Unicesar">¿La obra ya fue publicada por la editorial Ediciones
+                                Unicesar?</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <select class="input" aria-label="Default select example disabled" [(ngModel)]="pregunta2">
+                            <option selected disabled value="Otra Editorial">¿La obra ya fue publicada por otra editorial?</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <select class="input" aria-label="Default select example disabled" [(ngModel)]="pregunta3">
+                            <option selected disabled value="Nueva Edicion">¿La obra ya fue publicada por la editorial Ediciones
+                                Unicesar y se está solicitando la publicación de una nueva edición?</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <select class="input" aria-label="Default select example disabled" [(ngModel)]="pregunta4">
+                            <option selected disabled value="OtraEditEdic">¿Está solicitando la publicación de una nueva edición por la
+                                editorial Ediciones Unicesar?</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <select class="input" aria-label="Default select example disabled" [(ngModel)]="pregunta5">
+                            <option selected disabled value="OtroFormato">¿Está solicitando la publicación en un formato diferente al
+                                publicado inicialmente?</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row d-flex justify-content-center w-100">
+                    <button type="button" class="btn btn-outline-primary col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</button>
+                    <div class="col-4"></div>
+                    <button type="button" class="btn btn-outline-danger col-2" data-bs-dismiss="modal"
+                        aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal para agregar información complementaria-->
+
+<div class="contenedor">
+
+    <h2 class="titulo">Registrar Solicitud</h2>
+
+    <div class="contenedor_formulario">
+
+        <input type="text" autocomplete="off" placeholder="Título de la obra" [(ngModel)]="solicitud.titulo"
+            name="titulo" class="input">
+        <input type="text" autocomplete="off" placeholder="Área del conocimiento" name="area"
+            [(ngModel)]="solicitud.area" class="input">
+        <input type="text" autocomplete="off" placeholder="Sub área del conocimiento" name="subarea"
+            [(ngModel)]="solicitud.subarea" class="input">
+
+        <select class="input" aria-label="Default select example disabled" [(ngModel)]="publico">
+            <option selected disabled value="publicoObra">Público al que está dirigido la obra</option>
+            <option value="pregrado">Pregrado</option>
+            <option value="especializado">Especializado</option>
+            <option value="maestria">Maestría o Doctorado</option>
+            <option value="general">Público general</option>
+            <option value="otro">Otro</option>
+        </select>
+        <div *ngIf="(publico=='otro')">
+            <input type="text" autocomplete="off" placeholder="Cual?" [(ngModel)]="otro" name="otro" class="input">
+        </div>
+
+        <select class="input" aria-label="Default select example disabled" [(ngModel)]="formato">
+            <option selected disabled value="formatoObra">Formato en que se solicita que sea publicada la obra</option>
+            <option value="impreso">Impreso</option>
+            <option value="cd">Electrónico en CD-ROM</option>
+            <option value="virtual">Electrónico virtual (on-line)</option>
+            <option value="otro">Otro</option>
+        </select>
+        <div *ngIf="(formato=='otro')">
+            <input type="text" autocomplete="off" placeholder="Cual?" [(ngModel)]="otroF" name="otroF" class="input">
+        </div>
+        
+        <div class="row d-flex justify-content-center w-100">
+            <a class="btn btn-outline-primary p-3 col-5" data-bs-toggle="modal" data-bs-target="#modal-coautores">Registrar
+                Coautores</a>
+            <a class="btn btn-outline-primary p-3 col-5" data-bs-toggle="modal" data-bs-target="#modal-colaboradores">Registrar
+                Colaboradores</a>
+        </div>
+
+        <div class="row d-flex justify-content-center w-100">
+            <a class="btn btn-outline-primary p-3 col-5" data-bs-toggle="modal" data-bs-target="#modal-infTec">Registrar
+                Información Técnica</a>
+            <a class="btn btn-outline-primary p-3 col-5" data-bs-toggle="modal" data-bs-target="#modal-infComp">Registrar
+                Información Complementaria</a>
+        </div>
+        
+        <select class="input" aria-label="Default select example disabled" [(ngModel)]="tipo">
+            <option selected disabled value="Tipo de Obra">Tipo de obra a publicar</option>
+            <option value="investigacion">Libro resultado de investigación.</option>
+            <option value="pedagogico">Libro de texto o material pedagógico.</option>
+            <option value="recopilacion">Libro de recopilación de capítulos.</option>
+            <option value="institucional">Libro divulgativo o institucional.</option>
+            <option value="literatura">Libro de literatura.</option>
+            <option value="manual">Cartilla, guía o manual.</option>
+            <option value="memorias">Libro de memorias de eventos</option>
+        </select>
+        
+        <div *ngIf="(tipo=='investigacion')">
+            <input type="text" autocomplete="off" placeholder="Nombre del proyecto" [(ngModel)]="obraInv.nombreProyecto"
+                name="nombreProyecto" class="input">
+            <select class="input" aria-label="Default select example disabled" [(ngModel)]="fuente">
+                <option selected disabled value="Fuente de financiación">Fuente de financiación del proyecto</option>
+                <option value="interna">Interna</option>
+                <option value="externa">Externa</option>
+            </select>
+            <div *ngIf="(fuente=='externa')">
+                <input type="text" autocomplete="off" placeholder="Nombre de la entidad"
+                    [(ngModel)]="obraInv.nombreEntidad" name="nombreEntidad" class="input">
+            </div>
+            <input type="date" autocomplete="off" placeholder="Fecha de inicio" [(ngModel)]="obraInv.fechaIn"
+                name="fechaInicio" class="input">
+            <input type="date" autocomplete="off" placeholder="Fecha de terminación" [(ngModel)]="obraInv.fechaFin"
+                name="fechaTerminacion" class="input">
+            <input type="text" autocomplete="off" placeholder="Tiempo de ejecución del proyecto" name="tiempoEjec"
+                [(ngModel)]="obraInv.tiempoEjec" class="input">
+            <input type="text" autocomplete="off" placeholder="Grupo de investigación que ejecuto el proyecto"
+                [(ngModel)]="obraInv.grupoInv" name="grupoInv" class="input">
+            <input type="text" autocomplete="off" placeholder="Linea de investigación" name="lineaInv"
+                [(ngModel)]="obraInv.lineaInv" class="input">
+        </div>
+        <div *ngIf="(tipo=='memorias')">
+            <input type="text" autocomplete="off" placeholder="Nombre del evento" [(ngModel)]="memoria.titulo"
+                name="nombreEvento" class="input">
+            <input type="date" autocomplete="off" placeholder="Fecha de inicio" [(ngModel)]="memoria.fechaIn"
+                name="fechaIn" class="input">
+            <input type="date" autocomplete="off" placeholder="Fecha de terminación" [(ngModel)]="memoria.fechaFin"
+                name="fechaFin" class="input">
+            <input type="text" autocomplete="off" placeholder="Nombre del organizador" name="organizador"
+                [(ngModel)]="memoria.organizador" class="input">
+            <input type="text" autocomplete="off" placeholder="Nombre del grupo de investigación organizador"
+                [(ngModel)]="memoria.grupoInv" name="grupo" class="input">
+        </div>
+        
+    </div>
+    <br>
+    <h6 class="text-danger small">
+        Obligatoriamente se debe presentar la obra en medio digital, en formato PDF y WORD.
+    </h6>
+    <br>
+    <div class="btn_contenedor"><a class="btn" (click)="add()">Registrar Evaluador</a></div>
+</div>
