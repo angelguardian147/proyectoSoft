@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { RegSolicitudComponent } from './reg-solicitud/reg-solicitud.component';
 import { ShowSolicitudComponent } from './show-solicitud/show-solicitud.component';
 import { SolicitudPipe } from './pipe/solicitud.pipe';
+import { UploadFileComponent } from './upload-file/upload-file.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegSolicitudComponent,
     ShowSolicitudComponent,
-    SolicitudPipe
+    SolicitudPipe,
+    UploadFileComponent
   ],
   imports: [
     BrowserModule,
